@@ -45,3 +45,237 @@ public class HelloWorld {
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Hello Java File!
+------------------
+6 min
+Java runs on different platforms, but programmers write it the same way. Let’s explore some rules for writing Java.
+
+In the last exercise, we saw the file HelloWorld.java. Java files have a .java extension. Some programs are one file, others are hundreds of files!
+
+Inside HelloWorld.java, we had a class:
+
+public class HelloWorld {
+  
+}
+
+We’ll talk about classes more in the future, but for now think of them as a single concept.
+
+The HelloWorld concept is: Hello World Printer. Other class concepts could be: Bicycle, or: Savings Account.
+
+We marked the domain of this concept using curly braces: {}. Syntax inside the curly braces is part of the class.
+
+Each file has one primary class named after the file. Our class name: HelloWorld and our file name: HelloWorld. Every word is capitalized.
+
+Inside the class we had a main() method which lists our program tasks:
+
+public static void main(String[] args) {
+
+}
+
+Like classes, we used curly braces to mark the beginning and end of a method.
+
+public, static, and void are syntax we’ll learn about in future lessons. String[] args is a placeholder for information we want to pass into our program. This syntax is necessary for the 
+program to run but more advanced than we need to explore at the moment.
+
+Our program also displayed the text "Hello World" on the screen. This was accomplished using a print statement:
+
+System.out.println("Hello World");
+
+We’ll learn more about print statements in the next exercise!
+
+* Instructions
+--------------
+Checkpoint 1 Passed
+1.
+The text editor has a file, HelloYou.java, that contains a HelloYou class with a main() method.
+
+Inside main(), add a statement which prints Hello someName!, with your name replacing someName. Make sure to end the statement with a semicolon.
+
+For example, if your name were “Maria,” the program would print Hello Maria!.
+
+Let’s say we want to print Howdy World!.
+
+Place that message inside double quotes: "Howdy World!".
+
+Then place the quoted message inside the parentheses of System.out.println().
+
+System.out.println("Howdy World!");
+
+The println has the letter l as in “laser”, not the number 1.
+
+You must use double quotes!
+
+HelloYou.java
+-------------
+public class HelloYou {
+  public static void main(String[] args) {
+    System.out.println("Hello Andres");
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Print Statements
+------------------
+8 min
+Let’s take a closer look at this instruction from our previous program:
+
+System.out.println("Hello World");
+
+Print statements output information to the screen (also referred to as the output terminal). Let’s break this line of code down a little more. Don’t worry if some of the terms here are 
+new to you. We’ll dive into what all of these are in much more detail later on!
+
+	. System is a built-in Java class that contains useful tools for our programs.
+
+	. out is short for “output”.
+
+	. println is short for “print line”.
+
+We can use System.out.println() whenever we want the program to create a new line on the screen after outputting a value:
+
+System.out.println("Hello World");
+System.out.println("Today is a great day to code!");
+
+After "Hello World" is printed, the output terminal creates a new line for the next statement to be outputted. This program will print each statement on a new line like so:
+
+Hello World
+Today is a great day to code!
+
+We also can output information using System.out.print(). Notice that we’re using print(), not println(). Unlike System.out.println(), this type of print statement outputs everything on 
+the same line. For example:
+
+System.out.print("Hello ");
+System.out.print("World");
+
+The above code will have the following output:
+
+Hello World
+
+In this example, if you were to use print() or println() again, the new text will print immediately after World on the same line. It’s important to remember where you left your program’s 
+“cursor”. If you use println() the cursor is moved to the next line. If you use print() the cursor stays on the same line.
+
+Note: Going forward after this exercise, all exercises will use System.out.println() to output values. You will get to practice using System.out.print() statements in the Checkpoints 
+below, however.
+
+* Instructions
+--------------
+Checkpoint 1 Passed
+1.
+Inside main() and underneath the print statement System.out.println("Let's play hide and seek.");, output the following two statements using System.out.print():
+
+	. "Three..."
+
+	. "Two..."
+
+Be sure to use System.out.print(). Your code should look similar to the following example:
+
+System.out.print("First statement");
+System.out.print("Second statement");
+
+Make sure the text in your print statements matches the instructions exactly. Capitalization, punctuation, and spaces matter!
+
+Checkpoint 2 Passed
+2.
+Underneath your previous statements, output the following two text values using System.out.println():
+
+	. "One..."
+
+	. "Ready or not, here I come!"
+
+This prompt asks you to use System.out.println() to output two statements.
+
+Make sure the text in your print statements matches the instructions exactly. Capitalization, punctuation, and spaces matter!
+
+HideAndSeek.java
+----------------
+public class HideAndSeek {
+  public static void main(String[] args) {
+    System.out.println("Let's play hide and seek.");
+    System.out.print("Three...");
+    System.out.print("Two...");
+    System.out.println("One...");
+    System.out.println("Ready or not, here I come!");
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
